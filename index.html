@@ -131,7 +131,7 @@
             <textarea name="Message" rows="6" placeholder="Write your message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
-          <span id="msg"></span>
+         <!---- <span id="msg"></span> --->
         </div>
       </div>
     </div>
@@ -176,11 +176,8 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
         form.reset()
+        alert("Message sent sucessfully.")
       })
       .catch(error => console.error('Error!', error.message))
   })
