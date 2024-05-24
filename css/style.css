@@ -243,7 +243,7 @@ nav ul li a:hover::after{
 
 .social-icons a:hover{
   color: #42A5F5;
-  transform: translateY(-10px)
+  transform: translateY(-5px)
 }
 
 .btn {
@@ -258,15 +258,16 @@ nav ul li a:hover::after{
   text-decoration: none; 
 }
 
+.btn.btn2 {
+  display: inline-block;
+  background: #080808;
+  text-decoration: none; 
+}
+
 .btn:hover {
   background: #42A5F5;
 }
 
-.btn.btn2 {
-  display: inline-block;
-  background: #42A5F5;
-  text-decoration: none; 
-}
 
 .content-right form{
   width: 100%;
